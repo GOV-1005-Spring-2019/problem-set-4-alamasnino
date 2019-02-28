@@ -22,7 +22,7 @@ elections <- read_csv("ps_4_elections-poll-nc09-3.csv") %>%
 
 ## Problem 1
 
-```{r one}
+```{r one, echo=FALSE}
 ## There were x respondents who supported the Dem candidate.
 
 dem_support <- elections %>% 
@@ -78,15 +78,15 @@ first_dem_response<-elections %>%
 first_rep_response-first_dem_response
 
 ```
-There were `dem_support` respondents who supported the Dem. candidate.
+There were `r dem_support` respondents who supported the Dem. candidate.
 
-There were `rep_support-und_support` more respondents who favored the Republican candidate than who were Undecided.
+There were `r rep_support-und_support` more respondents who favored the Republican candidate than who were Undecided.
 
-There are two gender variables (gender and gender_combined). There are `gender_difference[1]` individuals for whom these variables have different values.
+There are two gender variables (gender and gender_combined). There are `r gender_difference[1]` individuals for whom these variables have different values.
 
-There are `white_difference[1]` respondents listed as “White” under race_eth who are not listed as “White” under file_race_black.
+There are `r white_difference[1]` respondents listed as “White” under race_eth who are not listed as “White” under file_race_black.
 
-The first response of Rep came `first_rep_response-first_dem_response` minutes (rounded to the nearest minute) before the first response of Dem.
+The first response of Rep came `r first_rep_response-first_dem_response` minutes (rounded to the nearest minute) before the first response of Dem.
 ## Including Plots
 
 
@@ -124,3 +124,4 @@ The first response of Rep came `first_rep_response-first_dem_response` minutes (
 # Worked with the code Preceptor put on Piazza.
 ```
 
+## Collaboration: Worked with the code Preceptor put on Piazza.
